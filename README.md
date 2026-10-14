@@ -102,10 +102,10 @@ src/main/java/com/thaynabds/contabanco/
 ## Testes
 
 ```bash
-./mvnw test
+./mvnw verify
 ```
 
-O relatório de cobertura fica em `target/site/jacoco/index.html`. A verificação do build exige pelo menos 80% das linhas cobertas, fora a classe `ContaTerminal`, que apenas liga as outras classes.
+O relatório de cobertura fica em `target/site/jacoco/index.html`. O comando `verify` exige pelo menos 80% das linhas cobertas, fora a classe `ContaTerminal`, que apenas liga as outras classes. O mesmo comando roda no GitHub Actions a cada envio para o repositório.
 
 ## Licença
 
